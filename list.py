@@ -72,3 +72,20 @@ def mergesort(x):
         a = mergesort(x[:middle])
         b = mergesort(x[middle:])
 return merge(a,b)
+
+# add by miami on 12-17-2017
+class myStack:
+     def __init__(self):
+         self.container = []  
+
+     def isEmpty(self):
+         return self.size() == 0   
+     def push(self, item):
+         self.container.append(item)  
+
+     def pop(self):
+         return self.container.pop()  
+
+     def size(self):
+         return len(self.container)  
+
